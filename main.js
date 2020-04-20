@@ -33,9 +33,15 @@ const multiply = (numA, numB) => {
   // * to get a product then return it
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
   console.log(numA, numB)
+  const product = numA * numB
+  return product
 }
 
-const divide = null
+const divide = (numA, numB) => {
+  console.log(numA, numB)
+  const quotient = numA / numB
+  return product
+}
 // / to get a quotient,
 
 const modulus = null
@@ -64,7 +70,7 @@ const equals = () => {
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
     break;
-    case "multiplication": multiply(firstNum, secondNum) 
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum)) 
     break;
     case "division": console.log(divide(firstNum, secondNum)) 
     break;
